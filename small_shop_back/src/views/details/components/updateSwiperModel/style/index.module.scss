@@ -1,0 +1,59 @@
+.boxs{
+  width: 100%;
+  min-height: 300px;
+  padding: 10px;
+  // background-color: skyblue;
+  // box-shadow: 0 0 4px #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  .item{
+    width: 180px;
+    height: 180px;
+    // background-color: red;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    box-shadow: 0 0 6px #ddd;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .4s;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &:hover{
+      &::after{
+        transform: translateY(0);
+      }
+    }
+    &::after{
+      content: "删除";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 40px;
+      width: 100%;
+      text-align: center;
+      line-height: 40px;
+      font-weight: bold;
+      transition: all .4s;
+      font-size: 20px;
+      background-color: rgba(0,0,0,.3);
+      transform: translateY(40px);
+    }
+  }
+}
+
+.radio{
+  width: 100%;
+}
+.btns{
+  display: flex;
+  width: 60%;
+  padding-bottom: 20px;
+  .swiperInput{
+    width: 100%;
+    margin-right: 10px;
+  }
+}

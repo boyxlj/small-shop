@@ -1,0 +1,13 @@
+.box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .bg{
+    width: 670px;
+    height: 500px;
+    background-image: url("../../../assets/images/notFound.png");
+    background-size: 100% 100%;
+  }
+}

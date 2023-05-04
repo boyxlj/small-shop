@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "shop-item-search":"/components/shop-item-search/shop-item-search",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-button": "@vant/weapp/button/index",
+    "order-item":"/components/order-item/order-item",
+    "van-empty": "@vant/weapp/empty/index"
+
+  },
+  "navigationBarTitleText": "我的订单",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

@@ -1,0 +1,19 @@
+<view class="box">
+  <view class="item"  wx:for="{{orderData}}" wx:key="index">
+    <view class="logos"><van-tag size="large" round type="danger" size="large" color="#cf0a2c">微商城自营店</van-tag><view class="success">{{item.type=='2'?'等待付款':'交易成功'}}</view></view>
+    <view class="shopList" bindtap="tiaoDetail" data-detailId="{{item.detailId}}" wx:for="{{item.orderList}}" wx:key="orderId" bindtap="tiaoDetail">
+      <image src="{{item.titleImg}}"></image>
+      <view class="right">
+        <view class="title">
+          <text wx:if="{{item.tag}}" class="tag">{{item.tag}}</text>
+          {{item.title}}/{{item.descs}}
+        </view> 
+        <view class="price"><text>￥{{item.price}}</text><text>x{{item.num}}</text></view>
+      </view>
+    </view>
+    <view class="btns">
+      <van-button type="" size="small" bind:click="delete" data-orderNumber="{{item.orderNumber}}" round>删除订单</van-button>
+      <van-button bind:click="pay" size="small" data-orderNumber="{{item.orderNumber}}"   style="margin-left:20rpx;" wx:if="{{item.type=='2'}}" type="danger" round color="#cf0a2c">立即支付</van-button>
+    </view>
+  </view>
+</view>

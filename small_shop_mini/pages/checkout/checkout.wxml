@@ -1,0 +1,131 @@
+<page-meta page-style="{{ show ? 'overflow: hidden;' : '' }}">
+  <view class="checkout">
+    <view class="content">
+      <view class="address">
+        <view wx:if="{{defaultAddress.length}}" class="top">
+          <view class="left">
+            <view class="img">
+              <van-icon bindtap="showPopup" class="icons" name="map-marked" />
+            </view>
+            <view class="info" bindtap="showPopup">
+              <view class="descAddress">{{defaultAddress[0].detailAddress}}</view>
+              <view class="phone"><text>{{defaultAddress[0].name}}</text><text>{{defaultAddress[0].phone}}</text></view>
+            </view>
+          </view>
+          <view class="right">
+            <van-icon bindtap="showPopup" class="iconss" name="arrow" />
+          </view>
+        </view>
+        <view wx:if="{{!defaultAddress.length}}" class="top">
+          <view style="height: 120rpx;font-size: 50rpx;line-height: 120rpx; ">请选择收货地址</view>
+        </view>
+        <view class="bottom">
+          <view bindtap="showPopup">
+            <van-icon name="add" />
+          </view>
+          <view bindtap="showPopup">添加/选择
+            <van-icon class="iconss" name="arrow" />
+          </view>
+        </view>
+
+      </view>
+      <view class="shop">
+        <view class="top">
+          <van-tag type="danger" round size="large" color='#cf0a2c'>微商城自营店</van-tag>
+        </view>
+        <view class="shopList" bindtap="tiaoDetail" data-detailId="{{item.detailId}}" wx:for="{{orderList}}" wx:key="detailId">
+          <image src="{{item.titleImg}}"></image>
+          <view class="right">
+            <view class="title"><text class="tag" wx:if="{{item.tag}}">{{item.tag}}</text>{{item.title}}</view>
+            <!-- <view class="title">{{item.title}}/{{item.descs}}</view> -->
+            <view class="price"><text>￥{{item.price}}</text><text>x{{item.num}}</text></view>
+          </view>
+        </view>
+        <view class="peisong">
+          <view>配送服务</view>
+          <view>快递 包邮 送运费险
+            <van-icon class="icon" name="arrow" />
+          </view>
+        </view>
+        <view class="youhui">
+          <view>店铺优惠</view>
+          <view>暂无优惠
+            <van-icon class="icon" name="arrow" />
+          </view>
+        </view>
+        <view class="others">
+          <view>订单备注</view>
+          <view>无备注
+            <van-icon class="icon" name="arrow" />
+          </view>
+        </view>
+      </view>
+      <view class="mingxi">
+        <view class="title">价格明细</view>
+        <view class="info">
+          <view class="totalPrice">
+            <view class="nums"><text>商品总价</text><text>共 {{totalNum}} 件宝贝</text></view>
+            <view style="font-weight: bold;">￥{{totalPrice}}</view>
+          </view>
+          <view class="youhui">
+            <view>店铺优惠</view>
+            <view>￥0
+              <van-icon class="icon" name="arrow" />
+            </view>
+          </view>
+          <view class="heji">
+            <view>合计</view>
+            <view style="font-weight: bold;">￥ {{totalPrice}} </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="footer">
+      <view class="left">
+        <view>共件 {{totalNum}} 商品</view>
+        <view class="total"><text>合计:</text><text>￥ {{totalPrice}}</text></view>
+      </view>
+      <view class="right">
+        <van-button bind:click="submitOrder" round type="danger" color='#cf0a2c'>
+          提交订单
+        </van-button>
+      </view>
+    </view>
+    <!-- orderNumber----{{orderNumber}} -->
+    <van-popup show="{{ show }}" position="bottom" custom-style="height: 90%;" bind:close="onClose" closeable>
+      <view class="popup">
+        <view class="contents">
+          <view wx:if="{{addressList.length}}" class="list" wx:for="{{addressList}}" wx:key="addressId">
+            <view class="lefts">
+              <van-icon name="friends" />
+            </view>
+            <view class="centents" bindtap="setDefault" data-addressId="{{item.addressId}}">
+              <view class="infos"><text class="name">{{item.name}}</text>
+                <text class="phones">{{item.phone}}</text>
+                <van-tag plain wx:if="{{item.type=='1'}}" type="danger">默认</van-tag>
+              </view>
+              <view class="addressInfo">
+                {{item.detailAddress}}
+              </view>
+            </view>
+            <view class="rights">
+              <van-icon name="edit" class="iconss" />
+            </view>
+          </view>
+          <view wx:if="{{!addressList.length}}" class="emptyss">
+            <van-empty image="error" description="您还没有添加收货地址">
+              <van-button round type="danger" bindtap="addAddress" class="bottom-button">去添加收货地址</van-button>
+            </van-empty>
+          </view>
+        </view>
+      </view>
+    </van-popup>
+  </view>
+</page-meta>
+<van-dialog id="van-dialog" />
+
+<van-dialog use-slot title="请扫码支付" show="{{ payDialogShow }}" show-cancel-button bind:close="onClose" bind:confirm="queren" confirmButtonText="我已支付" bind:cancel="cancel">
+  <view style="width: 100%;height: 400rpx; padding: 60rpx 0; display: flex;justify-content: center;" class="pays">
+    <image 	show-menu-by-longpress style="width: 400rpx;height: 100%;" src="https://api.helloxlj.top/public/static/file1662721153697790690611.png" />
+  </view>
+</van-dialog>

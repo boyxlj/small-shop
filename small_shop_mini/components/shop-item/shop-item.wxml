@@ -1,0 +1,15 @@
+<view class='box'>
+  <view  wx:if="{{item.children.length>0}}" wx:for="{{shopData}}" wx:key="detailId">
+    <view class="shop_category" bindtap="navigateCategory" data-detailId="{{item.detailId}}"><text>{{item.categoryName}}专区</text></view>
+    <view  class='shop'>
+      <view bindtap="shopdetail" data-detailId = "{{item.detailId}}" class="shopItem" wx:for="{{item.children}}" wx:key="detailId">
+        <image show-menu-by-longpress='1' webp="{{true}}" src="{{item.titleImg}}"></image>
+        <view class="title"><text wx:if="{{item.tag}}" class="tag">{{item.tag}}</text>{{item.title}}-{{item.descs}}</view>
+        <view class="price">
+          <text class="prePrice">￥{{item.price}}</text> 
+          <text class="nowPrice" wx:if="{{item.prePrice}}">￥{{item.prePrice}}</text> 
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

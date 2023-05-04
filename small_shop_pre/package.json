@@ -1,0 +1,59 @@
+{
+  "name": "small_shop_pre",
+  "version": "0.1.0",
+  "homepage": ".",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.21.0",
+    "axios": "^0.27.2",
+    "craco": "^0.0.3",
+    "craco-less": "^2.0.0",
+    "http-proxy-middleware": "^2.0.6",
+    "less": "^4.1.3",
+    "less-loader": "7",
+    "md-editor-rt": "^2.2.0",
+    "nanoid": "^4.0.0",
+    "nprogress": "^0.2.0",
+    "pubsub-js": "^1.9.4",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-redux": "^8.0.2",
+    "react-router": "^6.4.2",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "5.0.1",
+    "react-transition-group": "^4.4.5",
+    "redux": "^4.2.0",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.1",
+    "sass": "^1.52.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

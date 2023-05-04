@@ -1,0 +1,29 @@
+<view class="collect">
+  <view class="contents">
+    <view class="items" wx:if="{{collectList.length}}" wx:for="{{collectList}}" wx:key="collectId">
+      <view class="logos"><van-tag size="large" round type="danger" color='#cf0a2c'>微商城自营店</van-tag></view>
+    <view class="list" >
+      <view class="left"><image src='{{item.titleImg}}'></image></view>
+      <view class="right" bindtap="tiaoDetail" data-detailId="{{item.detailId}}">
+        <view class="top"><text wx:if="{{item.tag}}" class="tag">{{item.tag}}</text>{{item.title}}/{{item.descs}}</view>
+        <view class="bottom">
+          <text class="nowPrice">￥{{item.price}}</text>   
+          <text class="prePrice" wx:if="{{item.prePrice}}">￥{{item.prePrice}}</text> 
+        </view>
+      </view>
+    </view>
+    <view class="btns">
+      <van-button type="" size="small" bind:click="cancelCollect" data-collectId="{{item.collectId}}" round>取消收藏</van-button>
+      <van-button bind:click="addCar" size="small" data-detailId="{{item.detailId}}"  type="danger" round color='#cf0a2c'>加入购物车</van-button>
+    </view>
+      </view>
+      <view class="empty"  wx:if="{{!collectList.length}}" >
+        <van-empty image="error" description="您还没有收藏任何商品" />
+      </view>
+      <view class="likes">
+        <view class="tip like">--猜你喜欢--</view>
+      <shop-item-search shopData="{{likeData}}"></shop-item-search>
+      </view>
+  </view>
+</view>
+<van-dialog id="van-dialog" />

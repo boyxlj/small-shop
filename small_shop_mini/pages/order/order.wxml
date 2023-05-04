@@ -1,0 +1,62 @@
+<view class="order">
+  <van-tabs sticky active="{{ active }}" color="#cf0a2c" bind:change="onChange">
+    <van-tab title="全部订单" >
+      <order-item wx:if="{{orderList.length}}" bind:pay="pay" bind:refesh="onRefesh" orderData="{{orderList}}"></order-item>
+      <van-empty wx:if="{{!orderList.length}}"  image="error" description="您还没有相关的订单" />
+      <view class="likes">
+        <view class="tip like">--猜你喜欢--</view>
+      <shop-item-search shopData="{{likeData}}"></shop-item-search>
+      </view>
+    </van-tab>
+    <van-tab title="待付款"> 
+      <order-item wx:if="{{orderList.length}}" bind:pay="pay"  bind:refesh="onRefesh" orderData="{{orderList}}"></order-item>
+      <van-empty wx:if="{{!orderList.length}}" image="error" description="您还没有待付款相关的订单" />
+      <view class="likes">
+        <view class="tip like">--猜你喜欢--</view>
+      <shop-item-search shopData="{{likeData}}"></shop-item-search>
+      </view>
+    </van-tab>
+    <van-tab title="待发货">
+      <order-item wx:if="{{orderList.length}}" bind:pay="pay"  bind:refesh="onRefesh" orderData="{{orderList}}"></order-item>
+      <van-empty wx:if="{{!orderList.length}}"  image="error" description="您还没有待发货相关的订单" />
+      <view class="likes">
+        <view class="tip like">--猜你喜欢--</view>
+      <shop-item-search shopData="{{likeData}}"></shop-item-search>
+      </view>
+    </van-tab>
+    <van-tab title="待收货">
+      <order-item wx:if="{{orderList.length}}" bind:pay="pay"  bind:refesh="onRefesh" orderData="{{orderList}}">
+        <order-item orderData="{{orderList}}"></order-item></order-item>
+      <van-empty wx:if="{{!orderList.length}}"  image="error" description="您还没有待收货相关的订单" />
+      <view class="likes">
+        <view class="tip like">--猜你喜欢--</view>
+      <shop-item-search shopData="{{likeData}}"></shop-item-search>
+      </view>
+    </van-tab>
+    <van-tab title="待评价">
+      <order-item wx:if="{{orderList.length}}"  bind:pay="pay"  bind:refesh="onRefesh" orderData="{{orderList}}"></order-item>
+      <van-empty wx:if="{{!orderList.length}}"  image="error" description="您还没有待评价相关的订单" />
+      <view class="likes">
+        <view class="tip like">--猜你喜欢--</view>
+      <shop-item-search shopData="{{likeData}}"></shop-item-search>
+      </view>
+    </van-tab>
+  </van-tabs>
+
+  <van-dialog id="van-dialog" />
+  <van-dialog
+  use-slot
+  title="请扫码支付"
+  show="{{ payDialogShow }}"
+  show-cancel-button
+  bind:close="onClose"
+  bind:confirm="queren"
+  confirmButtonText="我已支付"
+  confirmButtonColor="#cf0a2c"
+  bind:cancel="cancel"
+>
+<view style="width: 100%;height: 400rpx; padding: 60rpx 0; display: flex;justify-content: center;" class="pays">
+  <image 	show-menu-by-longpress style="width: 400rpx;height: 100%;" src="https://api.helloxlj.top/public/static/file1662721153697790690611.png" />
+</view>
+</van-dialog>
+</view>

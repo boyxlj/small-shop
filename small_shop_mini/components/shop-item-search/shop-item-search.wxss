@@ -1,0 +1,62 @@
+.box {
+  padding-bottom: 180rpx;
+}
+.box .shop {
+  width: 100%;
+  min-height: 600rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.box .shop .shopItem {
+  width: 48.9%;
+  height: 500rpx;
+  border-radius: 14rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36rpx 31rpx;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+.box .shop .shopItem image {
+  width: 280rpx;
+  height: 350rpx;
+  margin-bottom: 25rpx;
+  object-fit: cover;
+}
+.box .shop .shopItem .title {
+  width: 100%;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* 这里是超出几行省略 */
+  overflow: hidden;
+  height: 95rpx;
+  font-size: 28rpx;
+}
+.box .shop .shopItem .title .tag {
+  background: linear-gradient(to right bottom, #9e2929, #d63c3c, #781818) !important;
+  border-radius: 6rpx;
+  padding: 0 6rpx;
+  color: #fff;
+  font-size: 24rpx;
+  margin-right: 7rpx;
+}
+.box .shop .shopItem .price {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  align-items: center;
+}
+.box .shop .shopItem .price .nowPrice {
+  text-decoration: line-through;
+  font-size: 26rpx;
+}
+.box .shop .shopItem .price .prePrice {
+  color: #cf0a2c;
+}

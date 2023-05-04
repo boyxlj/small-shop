@@ -1,0 +1,51 @@
+.box{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-image: url("../../../assets/images/bj.jpg");
+  background-size: 100% 100%;
+  user-select: none;
+  h1{
+    margin: 30px 10px;
+    font-size: 49px;
+    word-spacing: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(
+      to right,
+      red,
+      rgb(147, 185, 239),
+      rgb(217, 123, 233),
+      rgb(248, 244, 244)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  }
+  
+  .content{
+    width: 560px;
+    height: 400px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    .form{
+      text-align: left;
+      .item{
+        padding: 10px 0;
+        .btn{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .footer{
+    bottom: 60px;
+    font-size: 16px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

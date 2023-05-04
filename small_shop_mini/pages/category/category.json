@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index",
+    "van-empty": "@vant/weapp/empty/index"
+  },
+  "navigationBarTitleText": "商品分类"
+}

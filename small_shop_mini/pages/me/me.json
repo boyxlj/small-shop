@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "shop-item-search":"/components/shop-item-search/shop-item-search",
+    "van-icon": "@vant/weapp/icon/index"
+  },
+  "navigationBarTitleText": "我的",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false
+}

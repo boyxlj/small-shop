@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/car/car",
+    "pages/me/me",
+    "pages/category/category",
+    "pages/search/search",
+    "pages/login/login",
+    "custom-tab-bar/index",
+    "pages/detail/detail",
+    "pages/profile/profile",
+    "pages/order/order",
+    "pages/checkout/checkout",
+    "pages/collect/collect"
+  ],
+  "usingComponents": {
+    "van-dialog": "@vant/weapp/dialog/index"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "微商城"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

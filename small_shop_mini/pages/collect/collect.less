@@ -1,0 +1,111 @@
+.collect{
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #f1f3f5;
+  overflow: hidden;
+
+  .contents{
+    width: 100%;
+    min-height: 800rpx;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    margin-top: 25rpx;
+    margin-bottom: 20rpx;
+    .items{
+      width: 100%;
+      background-color: #fff;
+      height: 420rpx;
+      padding: 30rpx 20rpx;
+      box-sizing: border-box;
+      border-radius: 20rpx;
+      margin-bottom: 30rpx;
+      .list{
+        width: 100%;
+        height: 230rpx;
+        display: flex;
+        padding: 18rpx ;
+        box-sizing: border-box;
+        border-radius: 20rpx;
+        .left{
+          width: 400rpx;
+          height: 180rpx;
+          image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .right{
+          display: flex;
+          flex-direction: column;
+          justify-content:space-between;
+          margin-left: 15rpx;
+          .top{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            .tag{
+              background: linear-gradient(to right bottom,
+              rgb(158, 41, 41),
+              rgb(214, 60, 60),
+              rgb(120, 24, 24),
+              ) !important;
+              border-radius: 6rpx;
+              padding: 0 6rpx;
+              color: #fff;
+              font-size: 24rpx;
+              margin-right: 7rpx;
+          }
+          }
+          .bottom{
+            font-size: 36rpx;
+            color: red;
+            display: flex;
+            justify-content: space-between;
+            .nowPrice{
+              color: #cf0a2c;
+            }
+            .prePrice{
+              font-size: 28rpx;
+              text-decoration: line-through;
+              color:black;
+            }
+          }
+        
+        }
+        
+      }
+      .btns{
+        display: flex;
+        justify-content: space-between;
+
+      }
+    }
+    .empty{
+      margin-top: 170rpx;
+    }
+    .likes {
+      margin-top: 100rpx;
+      .tip {
+        width: 100%;
+        text-align: center;
+        margin: 8rpx 0 25rpx;
+        background-image: linear-gradient(to right bottom, rgb(241, 33, 33),
+            rgb(228, 52, 219),
+            black,
+            orange);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: 540;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      
+    }
+  }
+
+}

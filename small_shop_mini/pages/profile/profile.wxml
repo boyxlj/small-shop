@@ -1,0 +1,13 @@
+<view class="profile">
+  <view class="btns">
+    <van-button  open-type="contact" round block color="linear-gradient(to right, #4bb0ff, #6149f6)">
+      微商城客服
+    </van-button>
+  </view>
+  <view class="footer">
+      <view class="about">关于微商城</view>
+      <view>By-xlj</view>
+      <view>该商品信息均来源华为商城</view>
+      <view>Copyright © 2021-2022  微商城 </view>
+  </view>
+</view>

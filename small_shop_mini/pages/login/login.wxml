@@ -1,0 +1,18 @@
+<view class="login">
+  <view class="content">
+    <view class="logo">微商城</view>
+    <view class="form">
+      <van-cell-group>
+        <van-field model:value="{{ username }}" label="用户名" placeholder="请输入账号" error-message="{{usernameError?'账号不能为空':''}}" bind:input="inputUsername" maxlength="8" />
+        <van-field model:value="{{ password }}" label="密码" password placeholder="请输入密码" error-message="{{passwordError?'密码必能为空':''}}" border="{{ false }}" bind:input="inputPassword" maxlength="8" />
+      </van-cell-group>
+    </view>
+    <view class="login-submit">
+      <van-button round loading="{{loading}}"  bind:click="clickLogin" block color="linear-gradient(to right, #EE0E24, #F83D2D)">
+        登录
+      </van-button>
+      
+    </view>
+      
+  </view>
+</view>

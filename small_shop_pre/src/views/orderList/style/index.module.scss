@@ -1,0 +1,35 @@
+.orderList{
+  min-height: 700px;
+  .title{
+    font-size: 32px;
+    color: #757575;
+  }
+  .select{
+    display: flex;
+    color: #757575;
+    margin-bottom: 30px;
+    li{
+      margin-right:35px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    span{
+      position: relative;
+      left: -18px;
+    }
+  }
+}
+
+.liActive{
+  color: var(--themeColor);
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    background-color: var(--themeColor);
+  }
+}

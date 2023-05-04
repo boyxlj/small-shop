@@ -1,0 +1,183 @@
+.box{
+  .top{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #e0e0e0;
+    h1{
+      color: #757575;
+    }
+    .btns{
+      display: flex;
+      justify-content: space-between;
+      p{
+        font-size: 15px;
+      }
+      .btn{
+        display: flex;
+        div{
+          width: 120px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          border: 1px solid #e0e0e0;
+          font-size: 13px;
+          margin-left: 10px;
+          cursor: pointer;
+          transition: all .3s;
+        
+        }
+        .cancel{
+          border-radius: var(--btnBorderRadius);
+          &:hover{
+            border: 1px solid #858282;
+          }
+        }
+        .lijipay{
+          color: #fff;
+          border-radius: var(--btnBorderRadius);
+          background-color: var(--themeColor);
+          &:hover{
+            background-color: var(--hoverThemeColor);
+          }
+        }
+      }
+    }
+  }
+  .shopList{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    justify-content: flex-start;
+    position: relative;
+    img{
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      cursor: pointer;
+    }
+    .tag{
+      position: absolute;
+      font-size: 12px;
+      background:var(--themeColor) ;
+      background: linear-gradient(to right bottom,
+      rgb(158, 41, 41),
+      rgb(214, 60, 60),
+      rgb(120, 24, 24),
+      ) !important;
+      color: #fff;
+      padding: 0 3px;
+      margin-left: 3px;
+      border-radius: 4px;
+      left: 56px;
+      top: 2px;
+      cursor: pointer;
+    }
+   .title{
+        padding-left: 30px;
+        width: 38%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 17px;
+        transition: all .3s;
+        cursor: pointer;
+        &:hover{
+          color:var(--themeColor);
+        }
+      }
+     .price1{
+      span{
+        margin: 0 3px;
+      }
+     }
+  }
+  .address{
+    width: 100%;
+    height:125px;
+    border-bottom: 1px solid #e0e0e0;
+    h3{
+      margin: 20px 0 10px;
+    }
+    li{
+      color: #757575;
+      margin-bottom: 6px;
+      span{
+        margin-right: 10px;
+        color: black;
+      }
+    }
+  }
+  .pays{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 30px;
+    p{
+      color: black;
+      span{
+        margin-left: 10px;
+        color: #757575;
+      }
+    }
+  }
+  .ticket{
+    width: 100%;
+    height:125px;
+    border-bottom: 1px solid #e0e0e0;
+    h3{
+      margin: 20px 0 10px;
+    }
+    li{
+      color: #757575;
+      margin-bottom: 6px;
+      span{
+        margin-right: 10px;
+        color: black;
+      }
+    }
+  }
+  .price{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 30px;
+    li{
+      color: #757575;
+      display: flex;
+      span{
+        color: var(--themeColor);
+        width: 100px;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+  .totalPrice{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 7px;
+    align-items: center;
+    span{
+      margin-left: 10px;
+        color: var(--themeColor);
+        font-size: 30px;
+        margin: 0 10px;
+    }
+  }
+}
+.loading{
+  width: 100%;
+  min-height: 200px;
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 4px;
+}

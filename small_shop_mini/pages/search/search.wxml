@@ -1,0 +1,11 @@
+<view class='search'>
+  <van-sticky offset-top="{{ 0 }}">
+  <van-search class="searchInput" focus bind:search="search" bind:change="changeInput" value="{{ inputValue }}" shape="round" background="white" placeholder="请输入搜索关键词按回车键查询" />
+</van-sticky>
+  <view class="shopList" wx:if="{{shopData.length}}">
+    <shop-item-search   shopData="{{shopData}}"></shop-item-search>
+  </view>
+  <view class="empty"  wx:if="{{showEmpty}}">
+    <van-empty  image="search" description="没有查询到相关商品" />
+  </view>
+</view>

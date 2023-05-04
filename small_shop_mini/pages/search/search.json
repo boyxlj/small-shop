@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "shop-item-search":"/components/shop-item-search/shop-item-search",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-sticky": "@vant/weapp/sticky/index"
+  },
+  "navigationBarTitleText": "商品搜索"
+}

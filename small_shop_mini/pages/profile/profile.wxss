@@ -1,0 +1,30 @@
+.profile {
+  overflow: hidden;
+}
+.profile .btns {
+  margin: 20rpx 0;
+}
+.profile .footer {
+  width: 100%;
+  height: 250rpx;
+  position: fixed;
+  bottom: 260rpx;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 100rpx;
+  justify-content: center;
+  box-sizing: border-box;
+  background-image: linear-gradient(to right bottom, red, #1878f7, #6c0beb, #f316e8, #10fc86);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.profile .footer view {
+  margin: 8rpx 0;
+}
+.profile .footer .about {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}

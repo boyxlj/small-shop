@@ -1,0 +1,90 @@
+
+.boxx{
+  height: 400px;
+  overflow-y: auto;
+  padding: 0 10px;
+  .radio{
+    display: flex;
+    flex-direction: column;
+    .items{
+      margin: 10px 0;
+      min-height: 116px !important;
+      .itemBox{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        position: relative;
+        div{
+          width: 100%;
+          text-align: left;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          height: 33px;
+          .tag{
+            position: relative;
+            left: 5px;
+            top:-2px
+          }
+          span{
+            &:first-child{
+              margin: 0 !important;
+              padding: 0 !important;
+              height: 20px;
+              .ant-tag{
+                padding: 0 !important;
+                margin: 0 !important;
+              }
+            }
+            &:last-child{
+              padding-left: 10px !important;
+              position: relative;
+              left: -10px;
+            }
+           
+          }
+        }
+        .default{
+          margin: 0 !important;
+        }
+        .name{
+          height: 33px;
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+          .nameLeft{
+            .nameDetails{
+              margin-left: 20px;
+            }
+          }
+          .nameRight{
+            width: 10%;
+            padding-left: 20px;
+            position: relative;
+            top:-2px;
+            .deleteAddress{
+              opacity: 0;
+              transition: all .2s;
+            }
+          }
+        }
+        &:hover{
+          .name{
+            .nameRight{
+              .deleteAddress{
+                opacity: 1;
+              }
+            }
+          }
+          
+        }  
+      
+      }
+
+     
+    }
+
+  }
+}

@@ -1,0 +1,140 @@
+.detail {
+  width: 100%;
+  height: 100%;
+  background: #f1f3f5;
+  box-sizing: border-box;
+  padding-bottom: 10rpx;
+}
+.detail .swiper {
+  height: 700rpx;
+  width: 100%;
+  background: #fff;
+}
+.detail .swiper .swiper-item {
+  width: 100%;
+  height: 100%;
+}
+.detail .swiper .swiper-item image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.detail .price {
+  width: 100%;
+  height: 120rpx;
+  background-color: skyblue;
+  display: flex;
+}
+.detail .price .left {
+  width: 64%;
+  height: 100%;
+  background: linear-gradient(to right, #b02323, #f85656);
+  display: flex;
+  align-items: center;
+  font-size: 33rpx;
+  color: #FFF;
+}
+.detail .price .left .nowPrice {
+  font-size: 50rpx;
+  margin-left: 30rpx;
+}
+.detail .price .left .prePrice {
+  margin-left: 45rpx;
+  text-decoration: line-through;
+}
+.detail .price .right {
+  width: 36%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fad0d7;
+  color: #cf0a2c;
+}
+.detail .info {
+  width: 100%;
+  min-height: 200rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.detail .desc1 {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 35rpx 0;
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.detail .desc1 .ziying {
+  background: linear-gradient(to right, #b02323, #f85656);
+  width: 170rpx;
+  text-align: center;
+  border-radius: 15rpx;
+  color: #fff;
+  padding: 6rpx;
+  font-size: 30rpx;
+}
+.detail .desc1 .title {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* 这里是超出几行省略 */
+  overflow: hidden;
+  margin: 15rpx 0;
+}
+.detail .desc1 .select {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx 0 15rpx;
+}
+.detail .desc1 .select view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail .desc1 .select view .icons {
+  margin-right: 6rpx;
+}
+.detail .tip {
+  width: 100%;
+  text-align: center;
+  margin: 20rpx 0;
+  background-image: linear-gradient(to right bottom, #f12121, #e434db, black, orange);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 540;
+}
+.detail .like {
+  margin-bottom: 30rpx;
+}
+.detail .detailDesc {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 20rpx 0;
+  padding: 30rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 15rpx 0;
+  min-height: 100rpx;
+}
+.detail .bottom {
+  margin: 60rpx;
+}
+.collectIcon {
+  color: orange;
+}
+.tag {
+  background: linear-gradient(to right bottom, #9e2929, #d63c3c, #781818) !important;
+  border-radius: 6rpx;
+  padding: 0 6rpx;
+  color: #fff;
+  font-size: 24rpx;
+  margin-right: 7rpx;
+}

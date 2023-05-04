@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "shop-item":"/components/shop-item/shop-item",
+    "van-sticky": "@vant/weapp/sticky/index"
+  },
+  "navigationBarTitleText": "微商城",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle":"dark"
+  
+}

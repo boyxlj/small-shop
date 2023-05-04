@@ -1,0 +1,93 @@
+<view class="me">
+  <view class="top-box">
+    <view class="tips" bindtap="tiaoProfile">关于微商城</view>
+    <!-- <view class="tips" bindtap="tiaoProfile">个人中心</view> -->
+    <view class="login"  wx:if="{{loginSuccess}}">
+      <view class="left">
+        <image src="{{userImg}}" alt=""/>
+      <view>{{name}}</view>
+      </view>
+      <view class="right">
+        <van-icon bindtap="cancalLogin" class="icons" name="cross" />
+      </view>
+    </view>
+    <view class="login" wx:if="{{!loginSuccess}}">
+      <view class="left">
+        <image src="https://api.helloxlj.top/public/static/file1657851664917400322337.png" alt=""/>
+        <view bindtap="clickLogin">立即登录</view>
+      </view>
+      <view class="right">
+        <van-icon bindtap="clickLogin" class="icons" name="play" />
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="collect-box">
+      <view class="itemss"  bindtap="tiaoCollect">
+        <view><van-icon class="iconsss" name="star-o" /></view>
+        <text>收藏夹</text>
+      </view>
+      <view class="itemss" data-msg="关注店铺为空"  bindtap="tiaoMoney">
+        <view><van-icon class="iconsss" name="notes-o" /></view>
+        <text>关注店铺</text>
+      </view>
+      <view class="itemss" data-msg="浏览记录为空" bindtap="tiaoMoney">
+        <view><van-icon class="iconsss" name="underway-o" /></view>
+        <text>我的足迹</text>
+      </view>
+    </view>
+    <view class="order">
+      <view class="top">
+        <text>我的订单</text>
+        <view bindtap="tiaoOrder" data-id="0">查看所有订单<van-icon class="icons" name="arrow" /></view>
+      </view>
+      <view class="bottoms">
+        <view bindtap="tiaoOrder" data-id="1">
+          <view><van-icon name="paid" /></view>
+          <text>待付款</text>
+        </view>
+        <view bindtap="tiaoOrder" data-id="2">
+          <view><van-icon name="peer-pay" /></view>
+          <text>待发货</text>
+        </view >
+        <view bindtap="tiaoOrder" data-id="3">
+          <view><van-icon name="logistics" /></view>
+          <text>待收货</text>
+        </view>
+        <view bindtap="tiaoOrder" data-id="4">
+          <view><van-icon name="smile-comment-o" /></view>
+          <text>待评价</text>
+        </view>
+      </view>
+    </view>
+    <view class="money">
+      <view class="top">
+        <text>我的资产</text>
+        <view bindtap="tiaoMoney" data-id="2">查看我的余额<van-icon class="icons" name="arrow" /></view>
+      </view>
+      <view class="bottoms">
+        <view bindtap="tiaoMoney" data-msg="钱包为0">
+          <view><van-icon name="pending-payment" /></view>
+          <text>钱包</text>
+        </view>
+        <view bindtap="tiaoMoney" data-msg="优惠券为空">
+          <view><van-icon name="balance-pay"  /></view>
+          <text>优惠券</text>
+        </view>
+        <view bindtap="tiaoMoney" data-msg="积分为0">
+          <view><van-icon name="points"  /></view>
+          <text>积分</text>
+        </view >
+        <view bindtap="tiaoMoney" data-msg="充值卡为0">
+          <view><van-icon name="idcard"  /></view>
+          <text>充值卡</text>
+        </view>
+      </view>
+    </view>
+    <view class="likes">
+      <view class="tip like">--猜你喜欢--</view>
+    <shop-item-search shopData="{{likeData}}"></shop-item-search>
+    </view>
+  </view>
+  <van-dialog style="position: relative; z-index: 999999;" id="van-dialog" />
+</view>

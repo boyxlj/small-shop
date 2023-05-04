@@ -1,0 +1,163 @@
+.me {
+  background-color: #f1f3f5;
+  height: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.me .top-box {
+  width: 100%;
+  height: 482rpx;
+  background-image: linear-gradient(to right bottom, white, #ff4141, #fd5825, red, white);
+  box-sizing: border-box;
+}
+.me .top-box .tips {
+  padding-top: 100rpx;
+  font-size: 36rpx;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+  color: #fff;
+}
+.me .top-box .login {
+  height: 200rpx;
+  width: 100%;
+  margin-top: 50rpx;
+  display: flex;
+  padding: 0 40rpx;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.me .top-box .login .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.me .top-box .login .left image {
+  width: 140rpx;
+  height: 140rpx;
+  border: 8rpx solid #fff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.me .top-box .login .left view {
+  flex: 1;
+  margin-left: 26rpx;
+  font-size: 37rpx;
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #fff;
+}
+.me .top-box .login .right .icons {
+  font-size: 55rpx;
+  color: #fff;
+}
+.me .bottom {
+  width: 100%;
+  min-height: 140rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.me .bottom .collect-box {
+  position: relative;
+  top: -70rpx;
+  background-color: orange;
+  background-image: linear-gradient(to right bottom, #1111a0, #3b3bee, blue);
+  padding: 25rpx 60rpx;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150rpx;
+}
+.me .bottom .collect-box .itemss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: orange;
+  padding: 25rpx 0;
+  box-sizing: border-box;
+}
+.me .bottom .collect-box .itemss view .iconsss {
+  color: orange;
+  font-size: 50rpx !important;
+}
+.me .bottom .collect-box .itemss text {
+  color: #fff;
+  margin-top: 18rpx;
+}
+.me .bottom .order,
+.me .bottom .money {
+  width: 100%;
+  height: 300rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 20rpx 25rpx;
+  box-sizing: border-box;
+  position: relative;
+  top: -35rpx;
+}
+.me .bottom .order .top,
+.me .bottom .money .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3rpx solid #dddddd;
+  padding: 16rpx 0 26rpx 0;
+}
+.me .bottom .order .top view,
+.me .bottom .money .top view {
+  color: #aaa;
+  font-size: 30rpx;
+}
+.me .bottom .order .bottoms,
+.me .bottom .money .bottoms {
+  width: 100%;
+  display: flex;
+  height: 160rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.me .bottom .order .bottoms view,
+.me .bottom .money .bottoms view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}
+.me .bottom .order .bottoms view view,
+.me .bottom .money .bottoms view view {
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 58rpx;
+}
+.me .bottom .order .bottoms view text,
+.me .bottom .money .bottoms view text {
+  margin-top: 15rpx;
+}
+.me .bottom .money {
+  margin-top: 33rpx;
+}
+.me .bottom .order .bottoms view view {
+  background-color: #cf0a2c;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.me .bottom .likes {
+  margin: 0rpx 0 35rpx 0;
+}
+.me .bottom .likes .tip {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 35rpx;
+  background-image: linear-gradient(to right bottom, #f12121, #e434db, black, orange);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 540;
+  box-sizing: border-box;
+  overflow: hidden;
+}

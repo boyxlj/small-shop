@@ -1,0 +1,125 @@
+.box{
+  width: 100%;
+  min-height: 700px;
+  background-color: var(--bgColor);
+  .confirm{
+    width: 1226px;
+    min-height: 600px;
+    margin: 0 auto;
+    .order{
+      height: 290px;
+      width: 100%;
+      background: #fff;
+      border-radius: 5px;
+      padding: 30px 15px 40px;
+      .order_top{
+        display: flex;
+        width: 100%;
+        img{
+          width: 80px;
+          height: 80px;
+          margin-left: 30px;
+        }
+        .order_top_right{
+          padding: 0 15px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          .tip{
+            margin-left: 20px;
+            p{
+              span{
+                margin: 0 5px;
+                color: var(--themeColor);
+              }
+            }
+          }
+          .price{
+            margin-top: 10px;
+            span{
+              font-size: 25px;
+              color: var(--themeColor);
+            }
+          }
+        }
+      }
+      .order_bottom{
+        width: 87%;
+        margin-left: 145px;
+        margin-top: 15px;
+        border-top: 1px solid #ccc;
+        padding-top: 15px;
+        li{
+          margin-bottom: 8px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          span{
+            width: 80px;
+            display: block;
+            float: left;
+            color: black;
+          }
+          &:first-child{
+            color: var(--themeColor);
+          }
+          &:nth-child(2){
+            width: 97%;
+          }
+          &:nth-child(3){
+            width: 97%;
+          }
+        }
+      }
+    }
+    .pay{
+      margin-top: 23px;
+      width: 100%;
+      height: 230px;
+      padding: 24px 35px;
+      background: #fff;
+      border-radius: 5px;
+      h3{
+        padding-bottom: 15px;
+        &:first-child{
+          border-bottom: 1px solid #ccc;
+        }
+       
+      }
+      .pay_other{
+        display: flex;
+        justify-content: flex-start;
+        div{
+          width: 170px;
+          height: 55px;
+          border: 1.5px solid #ccc;
+          margin-right: 18px;
+          border-radius: 2px;
+          border-radius: var(--btnBorderRadius);
+          overflow: hidden;
+          cursor: pointer;
+          transition: all .5s;
+          &:hover{
+            border: 1.5px solid var(--themeColor);
+          }
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.loading{
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 4px;
+}

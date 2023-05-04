@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-tag": "@vant/weapp/tag/index",
+    "van-button": "@vant/weapp/button/index"
+    
+  }
+}

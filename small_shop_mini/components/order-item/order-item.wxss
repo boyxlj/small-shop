@@ -1,0 +1,78 @@
+.box {
+  width: 100%;
+  min-height: 300rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  background-clip: content-box;
+  margin-top: 20rpx;
+}
+.box .item {
+  width: 100%;
+  min-height: 420rpx ;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 20rpx;
+  padding: 25rpx;
+  box-sizing: border-box;
+  margin-bottom: 30rpx;
+}
+.box .item .logos {
+  margin: 10rpx 0 15rpx 15rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.box .item .logos .success {
+  color: #cf0a2c;
+}
+.box .shopList {
+  height: 200rpx;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10rpx;
+  box-sizing: border-box;
+  margin-bottom: 15rpx;
+}
+.box .shopList image {
+  width: 180rpx;
+  height: 180rpx;
+}
+.box .shopList .right {
+  flex: 1;
+  padding: 0 15rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box .shopList .right .title {
+  font-size: 30rpx;
+  height: 147rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  padding-bottom: 8rpx;
+}
+.box .shopList .right .title .tag {
+  background: linear-gradient(to right bottom, #9e2929, #d63c3c, #781818) !important;
+  border-radius: 6rpx;
+  padding: 0 6rpx;
+  color: #fff;
+  font-size: 24rpx;
+  margin-right: 7rpx;
+}
+.box .shopList .right .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box .shopList .right .price text:first-child {
+  font-size: 40rpx;
+  color: #cf0a2c;
+}
+.box .btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20rpx;
+}

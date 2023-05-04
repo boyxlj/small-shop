@@ -1,0 +1,276 @@
+.checkout {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #f1f3f5;
+  overflow: hidden;
+}
+.checkout .content {
+  width: 100%;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  margin-top: 25rpx;
+}
+.checkout .content .address {
+  width: 100%;
+  height: 220rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 20rpx;
+  box-sizing: border-box;
+}
+.checkout .content .address .top {
+  display: flex;
+  align-items: center;
+}
+.checkout .content .address .top .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+.checkout .content .address .top .left .img {
+  width: 10%;
+  height: 80rpx;
+}
+.checkout .content .address .top .left .img .icons {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  font-size: 60rpx;
+  color: #cf0a2c;
+}
+.checkout .content .address .top .left .info {
+  padding: 0 15rpx;
+  width: 100%;
+  min-height: 120rpx;
+}
+.checkout .content .address .top .left .info .descAddress {
+  width: 96%;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.checkout .content .address .top .left .info .phone {
+  color: #696666;
+}
+.checkout .content .address .top .left .info .phone text:last-child {
+  margin-left: 12rpx;
+}
+.checkout .content .address .top .right {
+  position: relative;
+  top: -17rpx;
+  width: 40rpx;
+  text-align: right;
+}
+.checkout .content .address .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8rpx;
+}
+.checkout .content .shop {
+  width: 100%;
+  min-height: 200rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  margin-top: 25rpx;
+  padding: 15rpx 20rpx;
+  box-sizing: border-box;
+}
+.checkout .content .shop .top {
+  margin: 8rpx 0 13rpx;
+  font-weight: bold;
+}
+.checkout .content .shop .shopList {
+  height: 200rpx;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10rpx;
+  box-sizing: border-box;
+  margin-bottom: 15rpx;
+}
+.checkout .content .shop .shopList image {
+  width: 180rpx;
+  height: 180rpx;
+}
+.checkout .content .shop .shopList .right {
+  flex: 1;
+  padding: 0 15rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.checkout .content .shop .shopList .right .title {
+  font-size: 33rpx;
+  height: 90rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.checkout .content .shop .shopList .right .title .tag {
+  background: linear-gradient(to right bottom, #9e2929, #d63c3c, #781818) !important;
+  border-radius: 6rpx;
+  padding: 0 6rpx;
+  color: #fff;
+  font-size: 24rpx;
+  margin-right: 7rpx;
+}
+.checkout .content .shop .shopList .right .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout .content .shop .shopList .right .price text:first-child {
+  font-size: 40rpx;
+  color: #cf0a2c;
+}
+.checkout .content .shop .peisong,
+.checkout .content .shop .youhui,
+.checkout .content .shop .others {
+  width: 100%;
+  margin-top: 45rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout .content .shop .peisong .icon,
+.checkout .content .shop .youhui .icon,
+.checkout .content .shop .others .icon {
+  color: #bbb4b4;
+}
+.checkout .content .shop .peisong view:first-child,
+.checkout .content .shop .youhui view:first-child,
+.checkout .content .shop .others view:first-child {
+  color: #696666;
+}
+.checkout .content .shop .others {
+  margin-bottom: 20rpx;
+}
+.checkout .content .mingxi {
+  width: 100%;
+  height: 340rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  margin-top: 25rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  margin-bottom: 190rpx;
+}
+.checkout .content .mingxi .title {
+  font-weight: bold;
+  margin: 8rpx 0 14rpx;
+}
+.checkout .content .mingxi .info .totalPrice,
+.checkout .content .mingxi .info .youhui,
+.checkout .content .mingxi .info .heji {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40rpx;
+}
+.checkout .content .mingxi .info .totalPrice .icon,
+.checkout .content .mingxi .info .youhui .icon,
+.checkout .content .mingxi .info .heji .icon {
+  color: #bbb4b4;
+}
+.checkout .content .mingxi .info .totalPrice view:first-child,
+.checkout .content .mingxi .info .youhui view:first-child,
+.checkout .content .mingxi .info .heji view:first-child {
+  color: #696666;
+}
+.checkout .content .mingxi .info .nums text:last-child {
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  color: #bbb4b4;
+}
+.footer {
+  width: 100%;
+  height: 160rpx;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  border-top: 2rpx solid #ddd;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer .left .total text:last-child {
+  margin: 0 15rpx 0 6rpx;
+  font-weight: bold;
+  color: #cf0a2c;
+  font-size: 45rpx;
+}
+.footer .right {
+  margin-right: 26rpx;
+}
+.iconss {
+  color: #bbb4b4;
+}
+.popup {
+  width: 100%;
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  padding-bottom: 50rpx;
+  overflow-y: scroll;
+}
+.popup .contents {
+  width: 100%;
+  height: 100%;
+  margin-top: 60rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+.popup .contents .list {
+  width: 100%;
+  height: 200rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30rpx;
+  box-sizing: border-box;
+  margin-bottom: 25rpx;
+}
+.popup .contents .list .lefts {
+  width: 100rpx;
+  font-size: 70rpx;
+  color: orange;
+}
+.popup .contents .list .centents {
+  flex: 1;
+}
+.popup .contents .list .centents .infos .name {
+  font-weight: bold;
+}
+.popup .contents .list .centents .infos .phones {
+  margin: 0 10rpx ;
+  color: #bbb4b4;
+}
+.popup .contents .list .centents .addressInfo {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  font-weight: 300;
+  font-size: 28rpx;
+}
+.popup .contents .list .rights {
+  width: 90rpx;
+  font-size: 50rpx;
+  text-align: center;
+}
+.popup .contents .emptyss {
+  margin-top: 100rpx;
+}

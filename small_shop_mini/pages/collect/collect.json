@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "shop-item-search":"/components/shop-item-search/shop-item-search",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-empty": "@vant/weapp/empty/index"
+  },
+  "navigationBarTitleText": "我的收藏",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+}

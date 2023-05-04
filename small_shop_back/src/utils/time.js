@@ -1,0 +1,1 @@
+export const getDate = (value)=> new Date(value).toLocaleString()

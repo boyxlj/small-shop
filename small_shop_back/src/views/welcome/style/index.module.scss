@@ -1,0 +1,25 @@
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  user-select: none;
+  box-sizing: border-box;
+  padding: 50px 10px;
+  .categoryPie,.categoryPieBar,.orderPie{
+    width: 600px;
+    min-height: 400px;
+  }
+  .categoryPieBar{
+    width: 98%;
+    padding-bottom: 70px;
+  }
+  .footer{
+    bottom: 20px;
+    font-size: 16px;
+    padding-bottom: 50px;
+  }
+}

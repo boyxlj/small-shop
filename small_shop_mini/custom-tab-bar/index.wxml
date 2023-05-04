@@ -1,0 +1,16 @@
+<van-tabbar
+style="position: relative; z-index: 888"
+  active="{{ value }}"
+  active-color="#cf0a2c"
+  inactive-color="#000"
+  bind:change="onChange"
+>
+  <van-tabbar-item wx:for="{{list}}" wx:key="index" icon="{{item.icon}}">{{item.label}}</van-tabbar-item>
+  
+</van-tabbar>
+
+<!-- <t-tab-bar split="{{false}}" value="{{value}}" bindchange="onChange">
+  <t-tab-bar-item  wx:for="{{list}}" wx:key="index" value="{{item.value}}" icon="{{item.icon}}">
+    {{item.label}}
+  </t-tab-bar-item>
+</t-tab-bar> -->

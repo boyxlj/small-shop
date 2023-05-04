@@ -1,0 +1,18 @@
+<view class="category">
+  <view class="left">
+    <van-sidebar class="sidebar"  active-key="{{ activeKey }}" bind:change="onChange">
+      <van-sidebar-item   bindtap="cateGoryName" data-detailId = "{{item.detailId}}" wx:for="{{categoryList}}" wx:key="detailId" title="{{item.categoryName}}" />
+    </van-sidebar>
+  </view>
+  <view class="right">
+    <view bindtap="detail" data-detailId="{{item.detailId}}" wx:if="{{shopList.length}}" class="item" wx:for="{{shopList}}" wx:key="detailId">
+      <image src="{{item.titleImg}}" alt=""/>
+      <text>{{item.title}}</text>
+      <view wx:if="item.tag" class="tag">{{item.tag}}</view>
+    </view>
+    <view class="empty" wx:if="{{!shopList.length}}">
+      <van-empty image="error" description="暂无数据" />
+    </view>
+   </view>
+</view>
+  

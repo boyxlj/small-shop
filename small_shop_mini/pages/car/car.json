@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "van-stepper": "@vant/weapp/stepper/index",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "shop-item-search":"/components/shop-item-search/shop-item-search",
+    "van-button": "@vant/weapp/button/index",
+    "van-tag": "@vant/weapp/tag/index"
+  },
+  "navigationBarTitleText": "购物车",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}
