@@ -4,7 +4,7 @@
 > 前台已经部署上线，欢迎访问：(默认账号密码均为111)
 `PC端/移动端：`http://www.11e.top/xlj/pre.
 
-> 后台管理请跳转到 <a href='http://www.11e.top/xlj/back' target="_blank">http://www.11e.top/xlj/back</a>.
+> 后台管理欢迎访问 <a href='http://www.11e.top/xlj/back' target="_blank">http://www.11e.top/xlj/back</a>.
 
 
 
@@ -26,15 +26,15 @@ PC端基于：`React`+`react-router-dom`+`redux`+`antd`+`Axios`
 后端基于：`Node.js(express框架`)+`Mysql`实现。
 
 ## 项目地址
-> PC端：<a href='https://github.com/boyxlj/small_shop_pre' target="_blank">https://github.com/boyxlj/small_shop_pre</a>
+> PC端：<a href='https://github.com/boyxlj/small-shop/tree/master/small_shop_pre' target="_blank">https://github.com/boyxlj/small-shop/tree/master/small_shop_pre</a>
 
-> 移动端：<a href='https://github.com/boyxlj/small_shop_mobile' target="_blank">https://github.com/boyxlj/small_shop_mobile</a>
+> 移动端：<a href='https://github.com/boyxlj/small-shop/tree/master/small_shop_mobile' target="_blank">https://github.com/boyxlj/small-shop/tree/master/small_shop_mobile</a>
 
-> 小程序：<a href='https://github.com/boyxlj/small_shop_mini' target="_blank">https://github.com/boyxlj/small_shop_mini</a>
+> 小程序：<a href='https://github.com/boyxlj/small-shop/tree/master/small_shop_mini' target="_blank">https://github.com/boyxlj/small-shop/tree/master/small_shop_mini</a>
 
-> 后台：<a href='https://github.com/boyxlj/small_shop_back' target="_blank">https://github.com/boyxlj/small_shop_back</a>
+> 后台：<a href='https://github.com/boyxlj/small-shop/tree/master/small_shop_back' target="_blank">https://github.com/boyxlj/small-shop/tree/master/small_shop_back</a>
 
-> 服务端：<a href='https://github.com/boyxlj/small-shop-serve' target="_blank">https://github.com/boyxlj/small_shop_serve</a>
+> 服务端：<a href='https://github.com/boyxlj/small-shop/tree/master/small_shop_serve' target="_blank">https://github.com/boyxlj/small-shop/tree/master/small_shop_serve</a>
 
 <b style="color:red;">注：</b><span style="font-size:14px">如果github无法访问请将`https://github.com`替换为`https://gitee.com`</span>
 
