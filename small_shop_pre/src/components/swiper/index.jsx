@@ -46,7 +46,7 @@ export default function Swiper(props) {
       navigate(`/goods?category=${content[0]?.parent}`)
     }
   }
-  return (  //pause-on-hover={false}
+  return ( 
     <div className={style.swiper}>
       <Carousel className={style.swiperBoss} autoplay effect="fade">
         {swiperList?.map(item => (
@@ -101,7 +101,6 @@ export default function Swiper(props) {
                           <span className={style['button-text']}>查看全部</span>
                         </button>
                       </div>
-                      {/* <div className={style.textTitle} onClick={clickSelectAll}>查看全部</div> */}
                     </div>)
                   }
                 </div>
