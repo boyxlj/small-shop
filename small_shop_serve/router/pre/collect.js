@@ -5,7 +5,6 @@ const query = require("../../util/mysql2")
 
 //查询用户收藏列表
 collectRouter.post("/usercollect", async (req, res) => {
-  //3表联查  shopdetail  collect  user
   const {userId} = req.body
   const sql = `
   select s.descs,s.title,s.detailId,s.titleImg,s.prePrice,s.price,s.tag,

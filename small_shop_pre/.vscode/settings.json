@@ -4,5 +4,6 @@
     "iconfont",
     "nprogress",
     "swiper"
-  ]
+  ],
+  "nuxt.isNuxtApp": false
 }
