@@ -1,4 +1,3 @@
-const BASEURL = "https://api.helloxlj.top/api"
-// const BASEURL = "http://localhost:3303/api"
+const BASEURL = "http://localhost:3303/api"
 import Axios from "./index"
 export const  getAbout = ()=>Axios.get(`${BASEURL}/select/article/small/shop?artId=small-shop-about`)
