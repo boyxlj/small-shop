@@ -96,7 +96,7 @@ const navigateDetail = (detailId:number)=>{
   box-sizing: border-box;
   display: flex;
   .sidebar {
-    height: 89%;
+    height: calc(100vh - 2.66rem - 49px);
     // width: 5.2rem;
     width: 22%;
     background: #f5f6f8;
@@ -106,10 +106,10 @@ const navigateDetail = (detailId:number)=>{
     overflow-y:scroll !important;
   }
   .shop {
-    height: 89vh;
+    height: calc(100vh - 2.66rem - 49px);
     width: 78%;
     position: fixed;
-    left: 5.4rem;
+    left: 5.1rem;
     top: 2.5rem;
     right: 0;
     overflow-y:scroll !important;

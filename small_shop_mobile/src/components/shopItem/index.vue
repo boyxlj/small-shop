@@ -2,8 +2,8 @@
   <div class="box">
     <template v-for="item in indexShopData" :key="item.detailId">
       <div v-if="item.children">
-        <div class="shop_category" >
-          <span >{{ item.categoryName }}专区</span>
+        <div class="shop_category">
+          <span>{{ item.categoryName }}专区</span>
         </div>
         <div class="shop">
           <div
@@ -68,7 +68,6 @@ const props = withDefaults(defineProps<Props>(), {
 const navigateDetails = (detailId: number, refresh?: boolean) => {
   router.push(`/details?detailId=${detailId}`);
 };
-
 </script>
 
 <style lang="less" scoped>
@@ -86,18 +85,20 @@ const navigateDetails = (detailId: number, refresh?: boolean) => {
     span {
       padding: 0.3125rem 1.5625rem;
       font-weight: bold;
-      background-image: linear-gradient(
-        to right bottom,
-        rgb(241, 33, 33),
-        rgb(228, 52, 219),
-        black,
-        orange
-      );
-      -webkit-background-clip: text;
-      color: transparent;
-      border: 0.0625rem solid;
-      border-image: linear-gradient(red, yellow, blue) 1 10;
-      clip-path: inset(0 round 10px);
+      border-radius: 0.4rem;
+      background: linear-gradient(90deg, #03a9f4, #f441a5, #803bff, #03a9f4);
+      background-size: 300%;
+      color: #fff;
+      animation: bgDong 8s infinite linear;
+      background-blend-mode: luminosity;
+    }
+  }
+  @keyframes bgDong {
+    from {
+      background-position: 0;
+    }
+    to {
+      background-position: 400%;
     }
   }
   .shop {
@@ -131,7 +132,7 @@ const navigateDetails = (detailId: number, refresh?: boolean) => {
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2; /* 这里是超出几行省略 */
         overflow: hidden;
-        height: 2.3888rem;
+        height: 2.2rem;
         font-size: 0.875rem;
         .tag {
           // background: var(--themeColor);
@@ -140,8 +141,8 @@ const navigateDetails = (detailId: number, refresh?: boolean) => {
             rgb(158, 41, 41),
             rgb(214, 60, 60),
             rgb(120, 24, 24)
-          ) ;
-          border-radius: .1875rem;
+          );
+          border-radius: 0.1875rem;
           padding: 0 0.1875rem;
           color: #fff;
           font-size: 0.75rem;
@@ -151,7 +152,7 @@ const navigateDetails = (detailId: number, refresh?: boolean) => {
         display: flex;
         width: 100%;
         justify-content: space-between;
-        margin-top: 0.625rem;
+        margin-top: 0.425rem;
         align-items: center;
         .nowPrice {
           color: var(--themeColor);

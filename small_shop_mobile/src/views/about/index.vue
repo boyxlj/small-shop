@@ -7,10 +7,8 @@
     </Navheader>
     <MarkDown/>
     <div class="info">
-      <div class="about">关于微商城</div>
-      <div>By-xlj</div>
-      <div>该商品信息均来源华为商城</div>
       <div>Copyright © 2021-{{ new Date().getFullYear() }} 微商城</div>
+      <div class="icp">备案号: 津ICP备2021007424号-2</div>
     </div>
   </div>
 </template>
@@ -34,15 +32,15 @@ import MarkDown from "./components/markDown/index.vue"
   
   .info{
     width: 100%;
-    height: 10.125rem;
+    height: 5.125rem;
     display: flex;
     align-content: center;
     align-items: center;
     flex-direction: column;
     padding: 0 100rpx;
+    font-size: 0.9rem;
     justify-content: center;
     box-sizing: border-box;
-    margin-bottom: 1rem;
     background-image: linear-gradient(to right bottom,
     red,
     rgb(24, 120, 247),
@@ -52,13 +50,8 @@ import MarkDown from "./components/markDown/index.vue"
     );
     color: transparent;
     -webkit-background-clip: text;
-    div{
-      margin: .25rem 0;
-    }
-    .about{
-      font-size: 1.125rem;
-      font-weight: bold;
-      margin-bottom: .625rem;
+    .icp{
+      margin-top: 0.4rem;
     }
   }
 }

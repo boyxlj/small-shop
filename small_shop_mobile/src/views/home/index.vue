@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <van-sticky :offset-top="44">
-      <van-search class="search" @click-input="navigateSearch"  placeholder="请输入搜索关键词" />
+      <van-search  class="search" @click-input="navigateSearch"  placeholder="请输入搜索关键词" />
     </van-sticky>
     <div class="content">
       <Swiper :swiperData="swiperData"></Swiper>
@@ -61,6 +61,12 @@ const navigateSearch = ()=>{
   min-height: 62.5rem;
   box-sizing: border-box;
   background: var(--bgColor);
+  .search{
+    ::v-deep(.van-search__content){
+      border-radius: 0.4rem;
+      width: 100%;
+    }
+  }
   .content{
     padding: 0 0.5375rem;
   }
