@@ -16,7 +16,7 @@ const previewTheme = ref('vuepress');
 onMounted(async()=>{
   const {data:res} = await getAbout()
   if(res.code!=200) return
-  content.value= res.content.replace(/shuangyinghao/g, '"').replace(/danyinhao/g, "'"); // 双引号
+  content.value= res.data[0]?.content
 })
 
 

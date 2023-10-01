@@ -28,7 +28,7 @@ export default function Footer() {
         <NavLink to="/about">关于微商城</NavLink>
         </div>
         <div className={style.copy}>
-           Small-Shop 微商城 © 2021-2023 Miraitowa 11e.top All Rights Reserved
+           Small-Shop 微商城 © 2021-{new Date().getFullYear()} Promise 11e.top All Rights Reserved
         </div>
       </div>
     </div>

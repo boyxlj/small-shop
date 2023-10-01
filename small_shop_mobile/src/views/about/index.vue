@@ -10,7 +10,7 @@
       <div class="about">关于微商城</div>
       <div>By-xlj</div>
       <div>该商品信息均来源华为商城</div>
-      <div>Copyright © 2021-2022 微商城</div>
+      <div>Copyright © 2021-{{ new Date().getFullYear() }} 微商城</div>
     </div>
   </div>
 </template>

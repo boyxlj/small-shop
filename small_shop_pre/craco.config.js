@@ -9,7 +9,7 @@ module.exports = {
           lessOptions: {
           // 自定义less变量
             modifyVars: {
-              '@primary-color': '#CF0A2C', // 蓝黑色
+              '@primary-color': '#CF0A2C', 
             },
             javascriptEnabled: true, 
         },

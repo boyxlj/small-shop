@@ -20,7 +20,7 @@ export default function About() {
       }, 500);
     })
     if(res.code!=200) return setContent("")
-    let Content = res.content.replace(/shuangyinghao/g, '"').replace(/danyinhao/g, "'"); // 双引号
+    let Content = res.data[0]?.content
     setContent(Content)
   }
   return (
