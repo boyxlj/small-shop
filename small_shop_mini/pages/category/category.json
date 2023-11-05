@@ -1,8 +1,12 @@
 {
   "usingComponents": {
     "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-sticky": "@vant/weapp/sticky/index",
     "van-sidebar-item": "@vant/weapp/sidebar-item/index",
     "van-empty": "@vant/weapp/empty/index"
   },
-  "navigationBarTitleText": "商品分类"
+  "navigationBarTitleText": "商品分类",
+  "enablePullDownRefresh": false,
+  "disableScroll": true
 }

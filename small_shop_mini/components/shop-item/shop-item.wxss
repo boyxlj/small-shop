@@ -6,17 +6,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20rpx;
+  margin: 44rpx auto;
 }
 .box .shop_category text {
   padding: 10rpx 50rpx;
   font-weight: bold;
-  background-image: linear-gradient(to right bottom, #f12121, #e434db, black, orange);
-  -webkit-background-clip: text;
   color: transparent;
   border: 1px solid;
-  border-image: linear-gradient(red, yellow, blue) 1 10;
-  clip-path: inset(0 round 10px);
+  border-radius: 16rpx;
+  color: #fff;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #803bff, #03a9f4);
+  background-size: 400%;
+  animation: dong 6s infinite;
+}
+@keyframes dong {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 .box .shop {
   width: 100%;
@@ -33,7 +45,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32rpx  31rpx;
+  padding: 32rpx 31rpx;
   box-sizing: border-box;
   margin-bottom: 20rpx;
 }

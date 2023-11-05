@@ -22,11 +22,9 @@
   padding: 0 10rpx;
   box-sizing: border-box;
   margin-top: 20rpx;
-  height: 280rpx;
+  height: 300rpx;
   display: flex;
   align-items: center;
-  background-color: #fff;
-  box-shadow: 0 0 10rpx #ddd;
   border-radius: 15rpx;
 }
 .login .content .login-submit {

@@ -1,5 +1,5 @@
 {
-  "projectname": "small_shop",
+  "projectname": "small_shop_mini",
   "setting": {
     "compileHotReLoad": true,
     "urlCheck": true
@@ -87,5 +87,6 @@
         }
       ]
     }
-  }
+  },
+  "libVersion": "2.25.4"
 }

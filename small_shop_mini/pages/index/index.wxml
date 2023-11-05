@@ -1,10 +1,10 @@
 <!--index.wxml-->
 <view class="index">
   <van-sticky offset-top="{{ 0 }}">
-  <van-search bind:click-input="tiaosearch" value="{{ value }}" shape="round" background="white" placeholder="请输入搜索关键词" />
-</van-sticky>
-  <swiper class="swiper"   circular indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <swiper-item class="swiper-item"  wx:for="{{swiperList}}" wx:key="index">
+    <van-search bind:click-input="tiaosearch" value="{{ value }}" shape="round" background="white" placeholder="请输入搜索关键词" />
+  </van-sticky>
+  <swiper class="swiper" circular indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <swiper-item class="swiper-item" wx:for="{{swiperList}}" wx:key="index">
       <image show-menu-by-longpress='1' webp src="{{item.imgs}}" alt="" />
     </swiper-item>
   </swiper>

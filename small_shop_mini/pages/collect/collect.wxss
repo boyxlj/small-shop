@@ -35,7 +35,7 @@
   height: 180rpx;
 }
 .collect .contents .items .list .left image {
-  width: 100%;
+  width: 180rpx;
   height: 100%;
   object-fit: cover;
 }

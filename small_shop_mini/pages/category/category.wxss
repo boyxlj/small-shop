@@ -3,28 +3,30 @@
   justify-content: space-between;
   height: 100vh;
   width: 100%;
+  overflow: hidden !important;
 }
 .category .left {
   width: 20%;
-  height: 90vh;
+  height: calc(100vh - 142px);
   position: fixed;
-  top: 0;
+  top: 110rpx;
+  background: #f7f8fa;
   left: 0;
   overflow-y: scroll !important;
+  overflow-x: hidden;
 }
 .category .left .sidebar {
   height: 100%;
   overflow-y: scroll !important;
 }
 .category .right {
-  width: 79%;
-  height: 90%;
+  width: 80%;
+  height: calc(100vh - 142px);
   min-height: 400rpx;
   display: flex;
   position: fixed;
   left: 20%;
-  top: 0;
-  overflow-y: auto;
+  top: 110rpx;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: flex-start;
@@ -53,12 +55,12 @@
 }
 .category .right .item {
   width: 30%;
-  height: 200rpx;
+  height: 214rpx;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 30rpx 0 20rpx ;
+  margin: 25rpx 0 20rpx;
   padding: 0 20rpx;
   box-sizing: border-box;
   position: relative;
@@ -71,7 +73,7 @@
   color: #fff;
   font-size: 24rpx;
   margin-right: 7rpx;
-  top: -30rpx;
+  top: -24rpx;
   right: -8rpx;
 }
 .category .right .item image {
@@ -79,11 +81,15 @@
   height: 140rpx;
 }
 .category .right .item text {
-  font-size: 25rpx;
+  font-size: 22rpx;
   display: block;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   width: 100%;
+  text-align: center;
   margin-top: 10rpx;
+  width: 130%;
 }

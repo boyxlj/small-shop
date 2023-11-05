@@ -56,6 +56,7 @@ var getTime = function (date) {
         },
         defaultDate: {
             type: null,
+            value: (0, utils_1.getToday)().getTime(),
             observer: function (val) {
                 this.setData({ currentDate: val });
                 this.scrollIntoView();
@@ -119,6 +120,10 @@ var getTime = function (date) {
             type: null,
             value: null,
         },
+        minRange: {
+            type: Number,
+            value: 1,
+        },
         firstDayOfWeek: {
             type: Number,
             value: 0,
@@ -129,6 +134,14 @@ var getTime = function (date) {
         subtitle: '',
         currentDate: null,
         scrollIntoView: '',
+    },
+    watch: {
+        minDate: function () {
+            this.initRect();
+        },
+        maxDate: function () {
+            this.initRect();
+        },
     },
     created: function () {
         this.setData({
@@ -143,7 +156,7 @@ var getTime = function (date) {
     },
     methods: {
         reset: function () {
-            this.setData({ currentDate: this.getInitialDate() });
+            this.setData({ currentDate: this.getInitialDate(this.data.defaultDate) });
             this.scrollIntoView();
         },
         initRect: function () {
@@ -180,15 +193,19 @@ var getTime = function (date) {
         getInitialDate: function (defaultDate) {
             var _this = this;
             if (defaultDate === void 0) { defaultDate = null; }
-            var _a = this.data, type = _a.type, minDate = _a.minDate, maxDate = _a.maxDate;
+            var _a = this.data, type = _a.type, minDate = _a.minDate, maxDate = _a.maxDate, allowSameDay = _a.allowSameDay;
+            if (!defaultDate)
+                return [];
             var now = (0, utils_1.getToday)().getTime();
             if (type === 'range') {
                 if (!Array.isArray(defaultDate)) {
                     defaultDate = [];
                 }
                 var _b = defaultDate || [], startDay = _b[0], endDay = _b[1];
-                var start = this.limitDateRange(startDay || now, minDate, (0, utils_1.getPrevDay)(new Date(maxDate)).getTime());
-                var end = this.limitDateRange(endDay || now, (0, utils_1.getNextDay)(new Date(minDate)).getTime());
+                var startDate = getTime(startDay || now);
+                var start = this.limitDateRange(startDate, minDate, allowSameDay ? startDate : (0, utils_1.getPrevDay)(new Date(maxDate)).getTime());
+                var date = getTime(endDay || now);
+                var end = this.limitDateRange(date, allowSameDay ? date : (0, utils_1.getNextDay)(new Date(minDate)).getTime());
                 return [start, end];
             }
             if (type === 'multiple') {
@@ -206,6 +223,8 @@ var getTime = function (date) {
             var _this = this;
             (0, utils_2.requestAnimationFrame)(function () {
                 var _a = _this.data, currentDate = _a.currentDate, type = _a.type, show = _a.show, poppable = _a.poppable, minDate = _a.minDate, maxDate = _a.maxDate;
+                if (!currentDate)
+                    return;
                 // @ts-ignore
                 var targetDate = type === 'single' ? currentDate : currentDate[0];
                 var displayed = show || !poppable;
@@ -262,7 +281,7 @@ var getTime = function (date) {
                         this.select([date, null]);
                     }
                     else if (allowSameDay) {
-                        this.select([date, date]);
+                        this.select([date, date], true);
                     }
                 }
                 else {

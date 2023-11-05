@@ -1,23 +1,27 @@
-import { getCategory,CategoryShop } from "../../api/request";
+import { getCategory, CategoryShop } from "../../api/request";
 Page({
   data: {
     activeKey: 0,
-    pageOn:1,
-    pageCount:50,
-    detailId:null,
+    pageOn: 1,
+    pageCount: 50,
+    detailId: null,
     categoryList: [],
-    shopList:[],
+    shopList: [],
   },
 
   onChange(event) {
     // console.log("点击了：",event.detail);
-    
   },
-
+  //跳转搜索页面
+  tiaosearch() {
+    wx.navigateTo({
+      url: "/pages/search/search",
+    });
+  },
   //点击分类
   cateGoryName(e) {
     const detailId = e.currentTarget.dataset.detailid;
-    this.getCategoryShop(detailId)
+    this.getCategoryShop(detailId);
   },
 
   //获取商品分类
@@ -32,37 +36,43 @@ Page({
       categoryList: res.data,
     });
     // console.log(res.data);
-    this.getCategoryShop( res.data[0].detailId)
+    this.getCategoryShop(res.data[0].detailId);
   },
   //查询分类下的商品
   async getCategoryShop(detailId) {
-    if(this.activeKey==detailId) return
+    if (this.activeKey == detailId) return;
     wx.showLoading({
-      title: '加载中',
-    })
-    const obj = {detailId,pageOn:this.data.pageOn,pageCount:this.data.pageCount}
-    const {data:res} = await CategoryShop(obj) 
-    if (res.code != 200){
+      title: "加载中...",
+    });
+    const obj = {
+      detailId,
+      pageOn: this.data.pageOn,
+      pageCount: this.data.pageCount,
+    };
+    const { data: res } = await CategoryShop(obj);
+    if (res.code != 200) {
+      this.setData({
+        shopList: [],
+      });
+      wx.hideLoading();
+      return;
+    }
+    wx.hideLoading();
+    const findIndex = this.data.categoryList?.findIndex(
+      (item) => item.detailId == detailId
+    );
+    this.setData({ activeKey: findIndex });
     this.setData({
-      shopList:[]
-    })
-    wx.hideLoading()
-    return
-  }
-  wx.hideLoading()
- const findIndex =  this.data.categoryList?.findIndex(item=>item.detailId==detailId)
-  this.setData({activeKey:findIndex})
-    this.setData({
-      shopList:res.data
-    })
+      shopList: res.data,
+    });
   },
 
   //跳转商品详情
-  detail(e){
-    const detailId = e.currentTarget.dataset.detailid
+  detail(e) {
+    const detailId = e.currentTarget.dataset.detailid;
     wx.navigateTo({
       url: `/pages/detail/detail?detailId=${detailId}`,
-    })
+    });
   },
   onLoad(options) {
     this.getCategoryData();
@@ -80,11 +90,11 @@ Page({
     this.getTabBar().setData({
       value: 1,
     });
-    const detailId = wx.getStorageSync('detailId')
-    if(detailId){
+    const detailId = wx.getStorageSync("detailId");
+    if (detailId) {
       console.log(detailId);
-      this.getCategoryShop(detailId)
-      wx.removeStorageSync('detailId')
+      this.getCategoryShop(detailId);
+      wx.removeStorageSync("detailId");
     }
   },
 

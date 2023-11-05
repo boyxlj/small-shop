@@ -1,0 +1,16 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@vant/weapp':
+    specifier: ^1.10.3
+    version: 1.11.1
+
+packages:
+
+  /@vant/weapp@1.11.1:
+    resolution: {integrity: sha512-2QddSq3MsozbTBAgEmW1rhzsEJNWPF2VS427M5pOOn0a7/f6lW+tymwdTcOQCzQONavhFwBv6Lebbs/UjE3Yig==}
+    dev: false

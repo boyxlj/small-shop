@@ -1,4 +1,5 @@
-const BASEURL = "http://localhost:3303/api"
+// const BASEURL = "http://localhost:3303/api"
+const BASEURL = "https://www.11e.top/api"
 export const request = (url,data,method)=>{
   return new Promise((resolve,reject)=>{
     wx.request({
