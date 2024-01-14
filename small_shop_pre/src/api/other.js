@@ -1,1 +1,1 @@
-export const palImg = "https://api.helloxlj.top/public/static/file1672203523878950237757.png"
+export const palImg = "https://api.helloxlj.top/public/static/1704015621124283370465.png"

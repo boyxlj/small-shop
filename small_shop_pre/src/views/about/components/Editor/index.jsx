@@ -8,7 +8,7 @@ export default function Editor(props) {
     <MdEditor
       previewOnly={true}
       modelValue={content}
-      previewTheme="vuepress"
+      previewTheme="github"
       // theme='dark'
     />
   )

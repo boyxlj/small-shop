@@ -28,7 +28,7 @@
     }
   }
   .center{
-    height:180px ;
+    height:220px ;
     overflow: hidden;
     .github{
       font-size: 50px;
@@ -62,11 +62,22 @@
         color: #ccc;
       }
     }
-    .copy{
+    .ba{
+      display: flex;
+      justify-content: center;
+      margin: 0;
       margin-top: 14px;
+      a{
+        margin-left: 5px;
+        color: black;
+      }
+    }
+    .copy{
+      margin-top: 12px;
       font-size: 15px;
       display: flex;
       justify-content: center;
+      
     }
   }
 }
