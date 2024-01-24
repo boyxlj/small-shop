@@ -20,6 +20,6 @@ function IsPC() {
 (() => {
   let res = IsPC();
   if (!res) {
-    location.replace("http://www.11e.top/m/xlj/pre");
+    location.replace("http://pro.helloxlj.top/small-shop-mobile");
   }
 })();

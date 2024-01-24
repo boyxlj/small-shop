@@ -27,9 +27,9 @@ export default function Footer() {
         <NavLink to="goods">全部商品</NavLink><span>|</span>
         <NavLink to="/about">关于微商城</NavLink>
         </div>
-        <p className={style.ba}>备案号:  <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank"> 津ICP备2021007424号-3</a></p>
+        <p className={style.ba}>备案号:  <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank"> 津ICP备2021007424号-1</a></p>
         <div className={style.copy}>
-           Small-Shop 微商城 © 2021-{new Date().getFullYear()} Promise 11e.top All Rights Reserved
+           Small-Shop 微商城 © 2021-{new Date().getFullYear()} Promise helloxlj.top All Rights Reserved
         </div>
       </div>
     </div>

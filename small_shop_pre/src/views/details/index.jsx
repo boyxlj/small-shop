@@ -97,7 +97,7 @@ export default function Details() {
       <UpdateTitle title="商品详情" />
       {loading && (
         <div className={style.loading} style={{ padding: loading ? '340px 0' : '0' }}>
-          <Spin />
+           <Spin size='large' />
         </div>
       )}
       {!loading && (

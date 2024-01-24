@@ -57,7 +57,6 @@ useRouter.get("/allUser",async(req,res)=>{
 //修改用户信息
 useRouter.post("/update/userInfo",async(req,res)=>{
   let {userId,name,sex} = req.body
-  console.log(userId,name,sex)
   if(!sex) sex = '1'
   const sql =`update user set name = "${name}",sex = "${sex}" where userId = '${userId}'`
   const sql1 = `select * from user where userId = "${userId}"` 

@@ -34,7 +34,7 @@ export default function AwaitShou() {
     <>
     {loading &&(
       <div className={style.loading} style={{padding:loading?'140px 0':'0'}}>
-      <Spin />
+       <Spin size='large' />
     </div>
     )}
     {!loading&&(

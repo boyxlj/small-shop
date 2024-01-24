@@ -28,7 +28,7 @@ export default function About() {
       <UpdateTitle title="关于"/>
       {loading &&(
         <div className={style.loading} style={{padding:loading?'240px 0':'0'}}>
-        <Spin />
+        <Spin size='large' />
       </div>
       )}
       {

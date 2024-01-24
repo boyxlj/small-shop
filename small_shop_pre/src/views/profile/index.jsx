@@ -41,7 +41,7 @@ export default function Profile() {
       <h2>个人中心</h2>
       {loading &&(
       <div className={style.loading} style={{padding:loading?'140px 0':'0'}}>
-      <Spin />
+       <Spin size='large' />
     </div>
     )}
     {!loading&&(

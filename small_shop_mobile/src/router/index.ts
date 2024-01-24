@@ -1,8 +1,8 @@
-import { createRouter, createWebHashHistory } from "vue-router"
+import { createRouter, createWebHistory } from "vue-router"
 import {routes}  from "./routes"
  const router =  createRouter({
   routes: routes,
-  history: createWebHashHistory(),
+  history: createWebHistory('/small-shop-mobile'),
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition

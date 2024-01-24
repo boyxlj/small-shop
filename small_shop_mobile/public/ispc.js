@@ -20,6 +20,6 @@ function IsPC() {
 (() => {
   let res = IsPC();
   if (res) {
-    location.replace("http://www.11e.top/xlj/pre");
+    location.replace("http://pro.helloxlj.top/small-shop-pre");
   }
 })();

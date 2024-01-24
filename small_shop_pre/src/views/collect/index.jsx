@@ -66,7 +66,7 @@ export default function Collect() {
     <div className={style.collect}>
       {loading && (
         <div className={style.loading} style={{ padding: loading ? '180px 0' : '0' }}>
-          <Spin  />
+       <Spin size='large' />
         </div>
       )}
       {

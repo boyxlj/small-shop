@@ -84,7 +84,7 @@ export default function Checkout() {
     <div className={style.box}>
       {loading && (
         <div className={style.loading} style={{ padding: loading ? '250px 0' : '0' }}>
-          <Spin />
+           <Spin size='large' />
         </div>
       )}
       {!loading && (

@@ -8,7 +8,7 @@
     <MarkDown/>
     <div class="info">
       <div>Copyright © 2021-{{ new Date().getFullYear() }} 微商城</div>
-      <div class="icp">备案号: 津ICP备2021007424号-2</div>
+      <div class="icp">备案号: 津ICP备2021007424号-1</div>
     </div>
   </div>
 </template>

@@ -76,7 +76,7 @@ export default function OrderDetails() {
       <UpdateTitle title="订单详情"/>
       {loading &&(
         <div className={style.loading} style={{padding:loading?'220px 0':'0'}}>
-        <Spin />
+         <Spin size='large' />
       </div>
       )}
       {

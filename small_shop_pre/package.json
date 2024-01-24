@@ -1,7 +1,7 @@
 {
   "name": "small_shop_pre",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "/small-shop-pre",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
@@ -33,7 +33,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "set PORT=3109 && craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject"

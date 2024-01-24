@@ -17,7 +17,7 @@ export default defineConfig({
       }
     }
   },
-  base:"./",
+  base:"/small-shop-mobile",
   plugins: [
     vue(),
     Components({

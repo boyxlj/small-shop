@@ -169,7 +169,7 @@ export default function Car() {
         <h1 >我的购物车</h1>
         {loading &&(
         <div className={style.loading} style={{padding:loading?'220px 0':'0'}}>
-        <Spin />
+         <Spin size='large' />
       </div>
       )}
         {(!loading && carData.length > 0) && <Table rowSelection={rowSelection} columns={columns} rowKey="carId" dataSource={carData} />}

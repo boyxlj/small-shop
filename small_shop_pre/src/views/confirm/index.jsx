@@ -47,7 +47,7 @@ export default function Confirm() {
     <div className={style.box}>
       {loading && (
         <div className={style.loading} style={{ padding: loading ? '220px 0' : '0' }}>
-          <Spin />
+           <Spin size='large' />
         </div>
       )}
       {!loading && (

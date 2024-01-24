@@ -134,7 +134,7 @@ export default function Goods() {
 
       <div className={style.routeTabs}><GoodTabs disabledTabs={disabledTabs} /></div>
       <div className={style.allShops} style={{padding:loading?'180px 0':'0'}}>
-        {loading && (<Spin />)}
+        {loading && ( <Spin size='large' />)}
         {(!loading && (
           itemShopList?.length ?
             (<IndexShop itemShopList={itemShopList} hiddenTile={true} />)

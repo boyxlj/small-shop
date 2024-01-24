@@ -1,5 +1,6 @@
 import Axios from "axios"
 Axios.defaults.baseURL = "http://localhost:3303/api"
+Axios.defaults.baseURL = "https://small-shop.helloxlj.top/api"
 
 Axios.interceptors.request.use(config=>{
   return config

@@ -31,10 +31,9 @@ export default function Login(){
     if(fullPath){
       router(fullPath)
     } 
-    dispatch(setUserInfo(res.data[0]))
-    dispatch(changeLoginDialogShow());
-    window.location.reload()
-    dispatch(setCarTotal(res.data[0].userId))
+    await dispatch(setUserInfo(res.data[0]))
+    await dispatch(changeLoginDialogShow());
+    await dispatch(setCarTotal(res.data[0].userId))
     form.resetFields();
     dispatch(isSureLogin());
     localStorage.setItem("token", res.token)

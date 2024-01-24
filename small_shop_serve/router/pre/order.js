@@ -154,7 +154,7 @@ orderRouter.post("/confirmorder", async (req, res) => {
   from orderdetail o inner join shopdetail s on o.detailId = s.detailId 
   where orderNumber = "${orderNumber}" `
   query(sql, (result) => {
-    console.log(result)
+    // console.log(result)
     if (!result.length) return res.send({ code: 404, msg: "确认订单查询列表失败" })
     const totalPrice = result.reduce((total, item) => {
       return total += Number(item.num) * Number(item.price)

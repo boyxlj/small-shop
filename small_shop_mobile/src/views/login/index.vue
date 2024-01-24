@@ -25,7 +25,7 @@
             登录
           </van-button>
         </div>
-        <div class="footer">Copyright © 2021-2022  微商城 </div>
+        <div class="footer">Copyright © 2021-{{ new Date().getFullYear() }}  微商城 </div>
       </van-form>
     </div>
   </div>
