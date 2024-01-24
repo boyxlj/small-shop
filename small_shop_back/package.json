@@ -2,7 +2,7 @@
   "name": "small_shop_back",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/small-shop-manage",
+  "homepage": ".",
   "dependencies": {
     "@craco/craco": "^6.4.5",
     "@reduxjs/toolkit": "^1.8.3",

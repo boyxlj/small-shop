@@ -2,7 +2,7 @@
 > 当前是本项目的移动端地址.
 
 > 前台已经部署上线，欢迎访问：
-> `PC端/移动端：`http://pro.helloxlj.top/small-shop-pre.
+> `PC端/移动端：`https://small-shop.helloxlj.top.
 
 > 如果觉得这个项目还不错，您可以点右上角 Star支持一下， 谢谢！
 

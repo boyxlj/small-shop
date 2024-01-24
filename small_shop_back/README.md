@@ -1,8 +1,8 @@
 ## 说明
-> 当前是本项目的后台，可访问 <a href='http://pro.helloxlj.top/small-shop-manage' target="_blank">http://pro.helloxlj.top/small-shop-manage</a>.
+> 当前是本项目的后台，可访问 <a href='http://small-shop.helloxlj.top/manage' target="_blank">http://small-shop.helloxlj.top/manage</a>.
 
 > 前台已经部署上线，欢迎访问：
-> `PC端/移动端：`http://pro.helloxlj.top/small-shop-pre.
+> `PC端/移动端：`http://small-shop.helloxlj.top.
 
 > 如果觉得这个项目还不错，您可以点右上角 Star支持一下， 谢谢！
 

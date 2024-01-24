@@ -1,7 +1,7 @@
 {
   "name": "small_shop_pre",
   "version": "0.1.0",
-  "homepage": "/small-shop-pre",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
