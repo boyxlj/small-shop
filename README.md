@@ -2,9 +2,9 @@
 > 本项目前后端分离，前端参考华为商城和小米商城实现.
 
 > 前台已经部署上线，欢迎访问：(默认账号密码均为111)
-`PC端/移动端：`http://www.11e.top/xlj/pre.
+`PC端/移动端：`http://pro.helloxlj.top/small-shop-pre.
 
-> 后台管理欢迎访问 <a href='http://www.11e.top/xlj/back' target="_blank">http://www.11e.top/xlj/back</a>.
+> 后台管理欢迎访问 <a href='http://pro.helloxlj.top/small-shop-manage' target="_blank">http://pro.helloxlj.top/small-shop-manage</a>.
 
 
 
